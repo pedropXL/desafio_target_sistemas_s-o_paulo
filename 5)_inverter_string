@@ -1,0 +1,14 @@
+def inverter(texto):
+    palavra_invertida = ""
+    
+    for i in range(len(texto) - 1, -1, -1):
+        palavra_invertida += texto[i]
+    
+    return palavra_invertida
+
+texto_sem_invercao = input("Informe uma string: ")
+
+texto_invertido = inverter(texto_sem_invercao)
+
+print(f"String original: {texto_sem_invercao}")
+print(f"String invertida: {texto_invertido}")
